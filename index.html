@@ -2,51 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/RetroApe-icon.png">
+  <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <title>Retro Ape | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <!-- Sign-up form start -->
 
-  Stay updated!
+  <div class="card">
+    <div class="card__container flex">
+      <div class="item1 flex f-col">
+        <section class="text">
+          <h1>Stay updated!</h1>
+          <p class="m-top-24">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="m-top-24">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+        </section>
 
-  Join 60,000+ product managers receiving monthly updates on:
+        <form id="form">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="email@company.com">
+          <span aria-live="polite" id="email-error"></span>
+          <button id="button" class="m-top-24">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+      <div class="item2">
+        <img id="img-main" src="assets/images/illustration-sign-up-desktop.svg" alt="sign up illustration" >
+      </div>
 
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
+    </div>
+  </div>
 
   <!-- Sign-up form end -->
 
+
+
   <!-- Success message start -->
 
-  Thanks for subscribing!
+
+  <!-- Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
 
-  Dismiss message
+  Dismiss message -->
+
 
   <!-- Success message end -->
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/RetroApe">Tomislav Šuto</a>.
   </div>
 </body>
 </html>
