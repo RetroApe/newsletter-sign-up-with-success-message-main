@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .flex {
@@ -49,10 +50,14 @@ body {
     margin-top: 1.5rem;
 }
 
+.wrapper {
+    /* width: 100%; */
+}
+
 .card {
     max-width: 58rem;
     background-color: white;
-    aspect-ratio: 1.45;
+    /* aspect-ratio: 1.45; */
 
     border-radius: 2.25rem;
 }
@@ -63,8 +68,8 @@ body {
 .item1 {
     box-sizing: content-box;
     width: 23.5rem;
-    padding: clamp(2.5rem, 0.0418rem + 10.388vw, 6.125rem) 4rem;
-    padding-right: 0;
+    padding: clamp(2.5rem, 0.0418rem + 10.388vw, 6.125rem) clamp(1.5rem, 0.62rem + 3.756vw, 4rem);
+    padding-right: 2.5rem;
 }
 
 .item2 {
@@ -101,6 +106,10 @@ li {
 
 li + li {
     padding-top: 0.625rem;
+}
+
+#form {
+    padding-top: 1rem;
 }
 
 label {
@@ -140,3 +149,51 @@ label {
     object-position: right;
     border-radius: 1rem;
 }
+
+@media (max-width: 600px) {
+
+    body {
+        display: block;
+    }
+
+    .card {
+        /* max-width: 600px; */
+        border-radius: 0;
+    }
+
+    .card__container {
+        flex-direction: column-reverse;
+    }
+
+    .item1 {
+        box-sizing: border-box;
+        padding: clamp(2.5rem, 0.0418rem + 10.388vw, 6.125rem) clamp(1.5rem, 0.62rem + 3.756vw, 4rem);
+        align-self: center;
+        width: 100%;
+    }
+
+    .item2 {
+        padding: 0;
+    }
+
+    #img-main {
+        border-radius: 0 0 1rem 1rem;
+        width: 100%;
+        height: 284px;
+    }
+
+    #form {
+        padding-top: 2.5rem;
+    }
+
+}
+
+/* @media (max-height: 1000px) {
+    .wrapper {
+        height: 842px;
+    }
+    .card {
+        aspect-ratio: none;
+        height: 100%;
+    }
+} */
