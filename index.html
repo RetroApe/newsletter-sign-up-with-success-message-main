@@ -29,9 +29,9 @@
           </section>
           <form id="form">
             <label for="email">Email address</label>
-            <input id="email" name="email" type="email" placeholder="email@company.com">
+            <input class="valid" id="email" name="email" type="email" placeholder="email@company.com">
             <span aria-live="polite" id="email-error"></span>
-            <button id="button" class="m-top-24">Subscribe to monthly newsletter</button>
+            <button class="button" class="m-top-24">Subscribe to monthly newsletter</button>
           </form>
         </div>
         <div class="item2">
@@ -50,14 +50,14 @@
 
   <!-- Success message start -->
 
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
+  <div id="success" class="card flex f-col">
+    <div class="block">
+      <img src="assets/images/icon-success.svg" alt="orange success icon checkmark" srcset="">
+      <h1>Thanks for subscribing!</h1>
+      <p class="m-top-24">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+    </div>
+    <button class="button" >Dismiss message</button>
+  </div>
 
   <!-- Success message end -->
   
