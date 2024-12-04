@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/RetroApe-icon.png">
   <link rel="stylesheet" href="style.css">
+
+  <script defer src="script.js"></script>
   
   <title>Retro Ape | Newsletter sign-up form with success message</title>
 
@@ -27,8 +29,8 @@
               <li>And much more!</li>
             </ul>
           </section>
-          <form id="form">
-            <label for="email">Email address</label>
+          <form id="form" novalidate>
+            <label for="email"><span>Email address</span><span id="invalid-info">Valid email required</span></label>
             <input class="valid" id="email" name="email" type="email" placeholder="email@company.com">
             <span aria-live="polite" id="email-error"></span>
             <button class="button" class="m-top-24">Subscribe to monthly newsletter</button>
