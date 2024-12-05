@@ -1,4 +1,4 @@
-.attribution { font-size: 11px; text-align: center; color: white; margin-top: 1rem;}
+.attribution { font-size: 11px; text-align: center; color: white; margin-top: 1rem; transition: all 1s;}
 .attribution a { color: lightblue; }
 
 :root {
@@ -19,6 +19,7 @@ html {
     box-sizing: content-box;
     background-color: #36384D;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 *, *::after, *::before {
@@ -28,12 +29,8 @@ html {
     line-height: 1.5;
 }
 
-.op-1 {
-    opacity: 1;
-}
-
-.op-0 {
-    opacity: 0;
+.bold {
+    font-weight: bold;
 }
 
 body {
@@ -203,6 +200,12 @@ label {
     padding: 4rem;
     padding-top: 3rem;
 
+    
+
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: all 1s ease-in-out;
+
     & img {
         width: 4rem;
     }
@@ -222,7 +225,7 @@ label {
 
 .wrapper {
     /* display: none; */
-    /* width: 0; */
+    transition: all 1s ease-in-out;
 }
 
 
