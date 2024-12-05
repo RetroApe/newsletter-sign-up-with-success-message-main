@@ -42,6 +42,12 @@ body {
     margin: 0 auto;
 }
 
+@media (max-height: 672px) {
+    body {
+        height: auto;
+    }
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
