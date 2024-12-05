@@ -6,6 +6,7 @@ const invalidInfo = document.getElementById('invalid-info');
 const wrapper = document.querySelector('.wrapper');
 const success = document.getElementById('success');
 const successButton = document.querySelector('#success .button');
+const emailConfirm = document.getElementById('email-confirm');
 
 function isValidEmail(email) {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -22,6 +23,8 @@ function handleSubmit(e) {
 
 
     if (isValidEmail(data.email)) {
+        emailConfirm.textContent = data.email;
+
         wrapper.style.opacity = '0';
         wrapper.style.transform = 'translateX(50%)';
         

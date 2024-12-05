@@ -19,7 +19,7 @@ html {
     box-sizing: content-box;
     background-color: #36384D;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 *, *::after, *::before {
@@ -200,7 +200,7 @@ label {
     padding: 4rem;
     padding-top: 3rem;
 
-    
+
 
     opacity: 0;
     transform: translateX(-30%);
@@ -272,7 +272,7 @@ label {
 
     #success {
         max-width: 100%;
-        height: 100svh;
+        height: max(50.75rem, 100svh);
         
         & .block {
             margin-top: 9.375rem;
